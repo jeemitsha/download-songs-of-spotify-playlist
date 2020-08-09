@@ -1,4 +1,5 @@
 import time
+import sys
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -95,4 +96,4 @@ def find_playlist(input_text):
 
 
 if __name__ == "__main__":
-    find_playlist('bollywood')
+    find_playlist(sys.argv[1])
